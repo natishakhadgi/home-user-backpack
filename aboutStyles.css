@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+}
+
+.profile{
+    width: 315px;
+    height: 225px;
+    padding: 20px;
+    background: #F2F2F2;
+    border-radius: 10px;    
+}
+
+.icons{
+    display: flex;
+    font-size: x-large;
+}
+
+.icons li{
+    margin-right: 10px;
+    color:#FE5962;
+}
+
+.icons li a{
+    color: #797979;
+}
+
+.icons li a:hover{
+    color: black;
+}
+
+
