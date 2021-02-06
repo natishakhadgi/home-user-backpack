@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+    padding: 0;
+    font-family:"Poppins",sans-serif;
+
+}
+.body {
+    
+    background-image: linear-gradient(rgba(254, 214, 0));
+}
+p::after{
+    content:attr(data-end);
+    color:#FCAE2C;
+    text-decoration:underline;
+}
+.help {
+    white-space: nowrap;
+    position:relative;
+    right:60px;
+    font-size:50%;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+        <title>Submit an idea</title>
+        <script src="formScript.js"></script>
+
+        <link rel="stylesheet" href="styleForm.css">
+        <style>
+            div{
+                margin:0px;
+                width: 35%;
+                padding:13px;
+                font-size:20px;
+                background-color:whitesmoke;
+            }
+            input[type=text],select
+            {
+                width: 100%;
+                padding: 10px 10px;
+                margin: 8px 0;
+                display:inline-block;
+                border:1px solid whitesmoke;
+                border-color: #B0D9D5;
+                border-radius: 13px;
+                box-sizing: border-box;
+                font-size: 14px;
+            }
+            input[type="checkbox"]
+            {
+                border-color: #B0D9D5;
+                border-radius:13px;
+            }
+            input[type="file"]
+            {
+                border-radius: 2px;
+                border-color: #B0D9D5;
+
+            }
+            input[type=submit]
+            {
+                width:100%;
+                background-color:#B0D9D5;
+                color: black;
+                padding:12px 15px;
+                margin: 5px 0;
+                border: none;
+                border-radius: 13px;
+                cursor:pointer;
+                font-size:16px;
+
+            }
+            input[type=submit]:hover
+            {
+                background-color:#B0D9D5;
+                font-size:19px;
+            }
+            h1{
+                color:#333333;
+                text-align:center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Submit ideas</h1>
+        <div><form name="ideaPage" method="post" onsubmit="validateForm()">
+            <lable for ="name">name</lable>
+            <input type="text" id="name" name="resourceName" size="30" placeholder="name of the resource">
+            <label for= "emails">email</label>
+            <input type="text" id="email" name="Email" size= "40" placeholder="enter your email address">
+            <label for="url">url</label>
+            <input type="text" id="URL" name="url" size="40" placeholder="link to the website"><br>
+            <label>categories</label>
+        </br><input type ="checkbox" id="games" vlaue="gameCat">
+            <label for="games">🎮 games</label>
+            <input type="checkbox" id="physical" value="physicals">
+            <label for="physical">⛹️‍♀️ physical excerise</label>
+            <input type="checkbox" id="mental" value="mentals">
+            <label for="mentalH">🧘‍♀️ mental health</label>
+            <input type="checkbox" id="entertainment" value="entertain">
+            <label for="entertainment">🍿 entertainment</label>
+            <input type="checkbox" id="groupA" value="groups">
+            <label for="groupFun">👥 group activity</label>
+            <input type="checkbox" id="singleA" value="singles">
+            <label for="singlesFun">👤 single player</label>
+            <input type="checkbox" id="free" value="freeA">
+            <label for="freeis">🆓 free</label>
+            <form action="http://jkorpela.fi/cgi-bin/echo.cgi"
+            enctype="multipart/form-data" method="post">
+            <p><br>upload a cover image:</br>
+            <input type="file" name="datafile" size="40">
+            </p>
+            <div>
+            <input type="submit" value="submit">
+            <div class="help">
+                <p data-end=" help">Issues with submission? Check</p>
+            </div>
+            </div>
+            </div>
+            </form>
+            </label>
+        </form>
+         </div>
+
+    </body>
+</html>
