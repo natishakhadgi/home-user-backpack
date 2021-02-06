@@ -1,1 +1,224 @@
 
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    margin-right: 40px;
+    text-decoration: none;
+    top: 5%;
+  }
+
+#smallheader {
+    margin-left: 10rem;
+}
+  
+  /* Links - change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+#nameheader {
+position: absolute;
+left: 46%;
+right: 50%;
+top: 2%;
+bottom: 26.39%;
+
+font-family: Futura PT;
+font-style: normal;
+font-weight: 800;
+font-size: 31.4286px;
+line-height: 32px;
+/* or 101% */
+letter-spacing: -1px;
+}
+
+.navbutton {
+    position: absolute;
+    left: 80%;
+    right: 2%;
+    top: 1%;
+    bottom: 23.61%;
+    font-size: 16px;
+    width: auto;
+    height: 38px;
+}
+
+.content {
+    padding: 5rem;
+}
+
+#name {
+/* HUB */
+position: absolute;
+width: 138px;
+height: 66px;
+left: 250px;
+top: 180px;
+
+/* Display Large Bold */
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 66px;
+/* identical to box height, or 103% */
+
+/* Gray 1 */
+color: #333333;
+
+}
+#question {
+    /* Are you.... also kind of tired of Among Us and Skribbl? */
+position: absolute;
+width: 393px;
+height: 76px;
+left: 250px;
+top: 336px;
+
+/* Link Large */
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* or 158% */
+
+/* Gray 3 */
+color: #797979;
+}
+
+#intro {
+/* Home-User-Backpack is a hub (lol) for college event planners to help virtually connect classmates, student committees, and members of student orgs. */
+position: absolute;
+width: 396px;
+height: 200px;
+left: 250px;
+top: 500px;
+
+/* Link Large */
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+/* or 158% */
+}
+
+#sharewfriendsbutton {
+    position: absolute;
+    display: flex;
+    top: 775px;
+    left: 17%;
+}
+
+#biglogo {
+    position: absolute;
+    left: 180%;
+    bottom: 160%;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5;
+    bottom: 100%;
+    left: 5;
+    padding: 10rem;
+    text-align: justify;
+}
+
+.search {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  left: 770px;
+  top: 1500px;
+ 
+}
+
+.searchTerm {
+  border: 2px solid #FCAE2C;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 40px;
+  outline: none;
+  color: black;
+  text-transform: lowercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  width: 671px;
+  height: 38px;
+}
+
+#searchbar{
+    position: absolute;
+    left: 0%;
+    right: 70.34%;
+    top: 13.16%;
+    bottom: 13.16%;
+    transform: translate(-50%, -50%);
+}
+
+.categories {
+border-radius: 12px;
+display: block;
+top:1350px;
+padding: 5px;
+text-align:center;
+position: absolute;
+left: 25%;
+}
+
+
+button {
+width: auto;
+height: 38px;
+padding: 5px;
+/* Rectangle 40 */
+/* White */
+background: #FFFFFF;
+/* Secondary */
+border: 2px solid #B0D9D5;
+box-sizing: border-box;
+border-radius: 10px;
+
+/* Link x-Small */
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+text-align: center;
+text-transform: lowercase;
+
+/* Gray 1 */
+color: #333333;
+
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #FCAE2C;
+    background: #FCAE2C;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 5px;
+  }
