@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Submit an idea</title>
+    <script src="formScript.js"></script>
+
+
+    <link rel="stylesheet" href="styleForm.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+    <script src="database.js"></script>
+</head>
+
+<body>
+
+    <h1>Submit ideas</h1>
+    <div class="resourceForm">
+        <!--<form name="ideaPage" method="post" onsubmit="validateForm()">-->
+        <label for="name">name</label>
+        <input type="text" id="nameForm" name="nameForm" size="30" placeholder="name of the resource">
+        <label for="url">url</label>
+        <input type="text" id="linkURL" name="url" size="40" placeholder="link to the website">
+        <label for="categories">categories</label>
+        <br>
+        <input type="checkbox" id="freeBool" value="true">
+        <label for="freeis">free &#x1F193</label>
+        <input type="checkbox" id="singleBool" value="true">
+        <label for="singlesFun">single player &#x1F464</label>
+        <input type="checkbox" id="groupBool" value="true">
+        <label for="groupFun">group activity &#x1F465</label>
+        <br>
+        <input type="checkbox" id="gameBool" value="true">
+        <label for="games">games &#x1F3AE</label>
+        <input type="checkbox" id="entertainmentBool" value="true">
+        <label for="entertainment">entertainment &#x1F37F</label>
+        <input type="checkbox" id="physicalBool" value="true">
+        <label for="physical">physical excerise &#x26F3</label>
+        <input type="checkbox" id="mentalHealthBool" value="true">
+        <label for="mentalH">mental health &#x1F338</label>
+        <br>
+
+        <!--<form action="http://jkorpela.fi/cgi-bin/echo.cgi" enctype="multipart/form-data" method="post">-->
+
+        <p><br>upload a cover image:</br>
+            <input type="file" name="datafile" size="40">
+        </p>
+        <button onclick="writeResource()">Submit</button>
+        <p>Issues with submission? check </p>
+        <p class="highlight">help</p>
+    </div>
+    </form>
+    </label>
+    </form>
+    </div>
+
+</body>
+
+</html>

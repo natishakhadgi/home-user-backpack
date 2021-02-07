@@ -1,61 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+.left {
+    min-width: 400px;
+    width: 45%;
+    margin-right: 2em;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-
+.bottom-half {
+    padding: 3em;
 }
-.right img{
-    height: 280px;
-    width: 350px;
-    z-index:-10px;
-    float:right;
-    padding:0;
 
+.highlight {
+    color: #FCAE2C;
 }
-.team{
+
+.team {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    grid-gap: 1em;
 }
 
-.profile{
+.profile {
     width: 315px;
     height: 250px;
     padding: 25px;
-    background:#B0D9D5;
-    border-radius: 10px;    
+    background: #F2F2F2;
+    ;
+    border-radius: 10px;
 }
 
-.icons{
+.icons {
     display: flex;
     font-size: x-large;
 }
 
-.icons li{
+.icons li {
     margin-right: 10px;
-    color:#FE5962;
+    color: #FE5962;
 }
 
-.icons li a{
+.icons li a {
     color: #797979;
 }
 
-.icons li a:hover{
+.icons li a:hover {
     color: black;
-}
-p::after{
-    content:attr(data-end);
-    color:#FCAE2C;
-    text-decoration:underline;
 }
 
 .h1 {
     place-content: center;
 }
+
 dl.faq button {
     margin: 0;
     padding: 0;
@@ -66,46 +59,44 @@ dl.faq button {
     background-color: transparent;
     padding-left: 0.125em;
 }
-  
+
 dl dd {
     margin: 0;
     padding: 0;
     margin-left: 1.5em;
 }
-  
+
 dl.faq .desc {
     margin: 0;
     padding: 0.5em;
     font-size: 110%;
     display: none;
-    background-color:#FCAE2C;
+    background-color: #FCAE2C;
 }
-  
+
 dl.faq button:hover,
 dl.faq button:focus {
     background-color: #B0D9D5;
 }
-  
+
 dl.faq button:focus {
     border-color: #FCAE2C;
 }
-  
+
 dl.faq button:hover {
     text-decoration: underline;
 }
-  
+
 dl.faq button:active {
     background-color: #B0D9D5;
 }
-  
+
 dl.faq button[aria-expanded="false"]::before {
     content: url('../images/right-arrow-brown.png');
     padding-right: 0.35em;
 }
-  
+
 dl.faq button[aria-expanded="true"]::before {
     content: url('../images/down-arrow-brown.png');
     padding-right: 0.35em;
 }
-
-

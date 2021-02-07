@@ -52,10 +52,8 @@ body {
     background-color: rgba(242, 96, 82, 0.15)
 }
 
-#nameheader {
+.nameheader {
     position: absolute;
-    width: 50px;
-    height: 35px;
     left: 46%;
     right: 50%;
     top: 2%;
@@ -84,8 +82,6 @@ body {
 /* Content CSS*/
 
 #name {
-    width: 138px;
-    height: 66px;
     left: 250px;
     top: 180px;
     /* Display Large Bold */
@@ -94,8 +90,6 @@ body {
     font-weight: 900;
     font-size: 64px;
     line-height: 66px;
-    /* identical to box height, or 103% */
-    /* Gray 1 */
     color: #333333;
 }
 
