@@ -7,8 +7,16 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-}
 
+}
+.right img{
+    height: 280px;
+    width: 350px;
+    z-index:-10px;
+    float:right;
+    padding:0;
+
+}
 .team{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
@@ -16,9 +24,9 @@ body{
 
 .profile{
     width: 315px;
-    height: 225px;
-    padding: 20px;
-    background: #F2F2F2;
+    height: 250px;
+    padding: 25px;
+    background:#B0D9D5;
     border-radius: 10px;    
 }
 
@@ -38,6 +46,66 @@ body{
 
 .icons li a:hover{
     color: black;
+}
+p::after{
+    content:attr(data-end);
+    color:#FCAE2C;
+    text-decoration:underline;
+}
+
+.h1 {
+    place-content: center;
+}
+dl.faq button {
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 110%;
+    border: thin solid transparent;
+    background-color: transparent;
+    padding-left: 0.125em;
+}
+  
+dl dd {
+    margin: 0;
+    padding: 0;
+    margin-left: 1.5em;
+}
+  
+dl.faq .desc {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 110%;
+    display: none;
+    background-color:#FCAE2C;
+}
+  
+dl.faq button:hover,
+dl.faq button:focus {
+    background-color: #B0D9D5;
+}
+  
+dl.faq button:focus {
+    border-color: #FCAE2C;
+}
+  
+dl.faq button:hover {
+    text-decoration: underline;
+}
+  
+dl.faq button:active {
+    background-color: #B0D9D5;
+}
+  
+dl.faq button[aria-expanded="false"]::before {
+    content: url('../images/right-arrow-brown.png');
+    padding-right: 0.35em;
+}
+  
+dl.faq button[aria-expanded="true"]::before {
+    content: url('../images/down-arrow-brown.png');
+    padding-right: 0.35em;
 }
 
 
